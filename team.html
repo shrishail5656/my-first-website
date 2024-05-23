@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Members</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 102, 1) 45%, rgba(0, 212, 255, 1) 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px; /* Increased spacing between team members */
+            justify-content: center; /* Center align the team members */
+        }
+
+        .team-member {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .team-member img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: scale(1.1);
+        }
+
+        .team-member:hover img {
+            transform: scale(1.2);
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .team-member:hover .overlay {
+            opacity: 1;
+        }
+
+        .team-member a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="team-member">
+            <a href="https://www.linkedin.com/in/JohnDoe" target="_blank">
+                <img src="https://via.placeholder.com/200" alt="John Doe">
+                <div class="overlay">John Doe</div>
+            </a>
+        </div>
+        <div class="team-member">
+            <a href="https://www.linkedin.com/in/JaneDoe" target="_blank">
+                <img src="https://via.placeholder.com/200" alt="Jane Doe">
+                <div class="overlay">Jane Doe</div>
+            </a>
+        </div>
+        <div class="team-member">
+            <a href="https://www.linkedin.com/in/EmilySmith" target="_blank">
+                <img src="https://via.placeholder.com/200" alt="Emily Smith">
+                <div class="overlay">Emily Smith</div>
+            </a>
+        </div>
+        <div class="team-member">
+            <a href="https://www.linkedin.com/in/MarkJohnson" target="_blank">
+                <img src="https://via.placeholder.com/200" alt="Mark Johnson">
+                <div class="overlay">Mark Johnson</div>
+            </a>
+        </div>
+        <div class="team-member">
+            <a href="https://www.linkedin.com/in/SarahBrown" target="_blank">
+                <img src="https://via.placeholder.com/200" alt="Sarah Brown">
+                <div class="overlay">Sarah Brown</div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
